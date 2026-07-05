@@ -35,10 +35,12 @@ Most existing Differential Privacy (DP) defenses apply the same protection stren
 ## Repository Structure
 
 fl-mia-thesis/
-├── data/               # CIFAR-10 dataset (downloaded, not tracked in git)
-├── models/             # Saved trained model weights (.pt files)
-├── results/            # Experiment output: CSVs, plots, metrics
-├── notebooks/          # Jupyter notebooks for each development stage
+│
+├── data/                          CIFAR-10 dataset (not tracked in git)
+├── models/                        Saved trained model weights (.pt files)
+├── results/                       Experiment output: CSVs, plots, metrics
+│
+├── notebooks/                     Jupyter notebooks per development stage
 │   ├── 00_setup_check.ipynb
 │   ├── 01_partition_test.ipynb
 │   ├── 02_model_test.ipynb
@@ -46,12 +48,14 @@ fl-mia-thesis/
 │   ├── 04_mia_test.ipynb
 │   ├── 05_defense_test.ipynb
 │   └── 06_full_experiment.ipynb
-├── src/                # Core reusable source code
-│   ├── partition.py    # Dirichlet-based Non-IID data partitioning
-│   ├── model.py         # CNN architecture (SimpleCNN)
-│   ├── federated.py     # FedAvg training, aggregation, evaluation
-│   ├── attack.py        # Membership Inference Attack model
-│   └── defense.py       # Flat DP and heterogeneity-aware adaptive DP
+│
+├── src/                           Core reusable source code
+│   ├── partition.py               Dirichlet-based Non-IID partitioning
+│   ├── model.py                   CNN architecture (SimpleCNN)
+│   ├── federated.py               FedAvg training, aggregation, evaluation
+│   ├── attack.py                  Membership Inference Attack model
+│   └── defense.py                 Flat DP and heterogeneity-aware adaptive DP
+│
 ├── requirements.txt
 └── README.md
 
