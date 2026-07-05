@@ -101,7 +101,7 @@ The pipeline has five stages:
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/misbaulalam/fl-mia-thesis
 cd fl-mia-thesis
 
 # Create and activate virtual environment
@@ -112,6 +112,7 @@ source venv/bin/activate      # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 # Run notebooks in order from notebooks/, starting with 00_setup_check.ipynb
+```
 ```
 
 ## References
